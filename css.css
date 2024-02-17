@@ -1,0 +1,61 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Mantiene la imagen detrás del contenido */
+}
+
+.home-title {
+    color: white; /* Elige un color que contraste bien con tu imagen de fondo */
+    font-size: 5em; /* Ajusta el tamaño de la fuente según necesites */
+    font-family : 'Roboto', sans-serif;
+    z-index: 2; /* Asegúrate de que el texto se muestre sobre la imagen */
+    position: relative; /* Importante para que el z-index funcione correctamente */
+}
+
+.person-names {
+    color: white; 
+    font-size: 1.5em; 
+    font-family : 'Roboto', sans-serif;
+    z-index: 2; 
+    position: relative;
+}
+
+.footer {
+    background-color: #091928;
+    color : white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 5px 0;
+}
